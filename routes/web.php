@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\frontendController; 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,8 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [frontendController::class,'index'])->name('index');
+Route::get('/category/{category}', [frontendController::class,'categoryPosts'])->name('categoryPosts');
+Route::get('/posts/{post}', [frontendController::class,'post'])->name('post');
+Route::get('/codesnippets', [frontendController::class,'codesnippets'])->name('codesnippets');
+Route::get('/about', [frontendController::class,'about'])->name('about');
+
+Route::get('/post', function () {
+    return view('post');
 });
 
 Route::get('/dashboard', function () {
