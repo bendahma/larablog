@@ -1,8 +1,9 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\frontend;
 
 use Illuminate\View\Component;
+
 use App\Models\Category ;
 
 class CategoryNav extends Component

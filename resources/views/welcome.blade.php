@@ -10,7 +10,7 @@
     
 
      <!-- Topic Nav -->
-     <x-category-nav />
+     <x-frontend.category-nav />
 
      <div class="container mx-auto flex flex-wrap py-6">
 
