@@ -19,6 +19,7 @@ Route::get('/posts/{post}', [frontendController::class,'post'])->name('post');
 Route::get('/codesnippets', [frontendController::class,'codesnippets'])->name('codesnippets');
 Route::get('/about', [frontendController::class,'about'])->name('about');
 Route::get('/terms', [frontendController::class,'termsOfService'])->name('termsOfService');
+Route::get('/contact', [frontendController::class,'contact'])->name('contact');
 
 Route::get('/post', function () {
     return view('post');

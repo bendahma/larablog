@@ -45,7 +45,21 @@
             Larablog may revise these Terms of Use for its Website at any time without prior notice. By using this Website, you are agreeing to be bound by the current version of these Terms and Conditions of Use.
         </p>
 
-</section>
+    </section>
+
+    <aside class="w-full md:w-1/3 flex flex-col items-center px-3">
+
+        <div class="w-full flex justify-center  bg-white ">
+            
+            <div class="w-full flex justify-center flex-col ">
+                    <img class="hover:opacity-75 cursor-pointer my-16 rounded-md shadow-sm" src="{{asset('/img/1.jpg')}}">   
+                    <img class="hover:opacity-75 cursor-pointer my-16 rounded-md shadow-sm" src="{{asset('/img/2.jpg')}}">   
+                    <img class="hover:opacity-75 cursor-pointer my-16 rounded-md shadow-sm" src="{{asset('/img/3.jpg')}}">                  
+            </div>
+           
+        </div>
+
+     </aside>
 </div>
 
 @endsection
