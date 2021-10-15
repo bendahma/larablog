@@ -47,6 +47,11 @@ class frontendController extends Controller
         //
     }
 
+    public function termsOfService()
+    {
+        return view('terms') ;
+    }
+
 
 
     /**

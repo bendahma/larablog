@@ -18,6 +18,7 @@ Route::get('/category/{category}', [frontendController::class,'categoryPosts'])-
 Route::get('/posts/{post}', [frontendController::class,'post'])->name('post');
 Route::get('/codesnippets', [frontendController::class,'codesnippets'])->name('codesnippets');
 Route::get('/about', [frontendController::class,'about'])->name('about');
+Route::get('/terms', [frontendController::class,'termsOfService'])->name('termsOfService');
 
 Route::get('/post', function () {
     return view('post');
