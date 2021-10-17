@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\frontendController; 
+use App\Http\Controllers\MessageController; 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +21,7 @@ Route::get('/codesnippets', [frontendController::class,'codesnippets'])->name('c
 Route::get('/about', [frontendController::class,'about'])->name('about');
 Route::get('/terms', [frontendController::class,'termsOfService'])->name('termsOfService');
 Route::get('/contact', [frontendController::class,'contact'])->name('contact');
+Route::post('/contact', [MessageController::class,'store'])->name('getMessage');
 
 Route::get('/post', function () {
     return view('post');

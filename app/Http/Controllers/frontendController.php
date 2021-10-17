@@ -56,7 +56,7 @@ class frontendController extends Controller
     {
         return view('contact') ;
     }
-
+    
 
 
     /**
